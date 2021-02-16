@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: auto;
+  padding: auto;
+  font-family: Spartan, sans-serif;
+  background-color: hsl(0, 0%, 100%);
+  color: #111111;
+  background-image: url(/images/bg-pattern-bottom-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: 1440px;
+  background-position: center;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 2.5rem;
+  /* max-width: 1440px; */
+  min-height: 100vh;
+  gap: 10px;
+}
+
+.description {
+  /* border: 1px solid red; */
+  width: 700px;
+  padding: 1rem 1rem;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 2.8rem;
+  padding: 5rem 2rem 1rem 1rem;
+  color: hsl(300, 43%, 22%);
+}
+
+.description p {
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: hsl(300, 43%, 22%);
+  padding: 1rem 2rem 0 1rem;
+  opacity: 0.9;
+}
+
+.stars {
+  /* border: 1px solid green; */
+  width: 700px;
+  padding: 5rem 1rem;
+  font-weight: 700;
+  font-size: 0.8rem;
+  color: hsl(300, 43%, 22%);
+}
+
+.reviews {
+  background-color: hsl(300, 24%, 96%);
+  border-radius: 10px;
+  /* display: block; */
+  padding: 0.8rem;
+  margin: 0.9rem;
+  width: 350px;
+}
+
+.reviews:nth-of-type(2) {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.reviews:last-of-type {
+  margin-left: auto;
+}
+
+.reviews p {
+  text-align: center;
+  padding: 0.2rem;
+}
+
+span {
+  padding-left: 1.25rem;
+}
+
+.customer-reviews {
+  /* border: 1px solid blue; */
+  display: flex;
+  width: 100%;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0 1rem 5rem 1rem;
+}
+
+.box {
+  /* border: 1px solid orange; */
+  font-size: 0.5rem;
+  background-color: hsl(300, 43%, 22%);
+  max-width: 300px;
+  max-height: 450px;
+  align-content: space-around;
+  padding: 1.5rem;
+  border-radius: 5%;
+}
+
+.box-irene {
+  margin-top: 1.25rem;
+}
+
+.box-anne {
+  margin-top: 3rem;
+}
+
+.img-holder {
+  width: 38px;
+  height: 38px;
+  overflow: hidden;
+  border-radius: 50%;
+  float: left;
+  margin-right: 1.25rem;
+  margin-bottom: 0.625rem;
+}
+
+.img-holder img {
+  width: 100%;
+  height: auto;
+}
+
+.name {
+  color: hsl(300, 24%, 96%);
+  font-weight: 500;
+  font-size: 0.7rem;
+  margin-bottom: 0;
+  padding: 0.625rem;
+}
+
+.title {
+  color: hsl(333, 80%, 67%);
+  font-weight: 400;
+  font-size: 0.7rem;
+  margin-top: -0.25rem;
+  left: 30px;
+}
+
+.box p {
+  color: hsl(300, 24%, 96%);
+  clear: left;
+  margin-top: 1.875rem;
+  line-height: 1.5;
+  font-size: 0.7rem;
+}
+
+footer {
+  /* border: 1px solid orange; */
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.attribution {
+  font-size: 0.5rem;
+  color: black;
+}
+
+.attribution a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 25em) {
+  body {
+    display: block;
+  }
+
+  .container {
+    margin: 0.3rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .description p {
+    font-size: 0.6rem;
+    text-align: center;
+  }
+
+  .stars {
+    font-size: 0.7rem;
+    text-align: center;
+    padding: 0;
+  }
+
+  .description,
+  .customer-reviews {
+    font-size: 0.6rem;
+    padding: 0;
+  }
+
+  .reviews p {
+    text-align: center;
+    margin: 0;
+  }
+
+  .box-colton {
+    margin-top: 1.25rem;
+    font-size: 0.7rem;
+  }
+
+  .box-irene {
+    margin-top: 1.25rem;
+    font-size: 0.7rem;
+  }
+
+  .box-anne {
+    margin-top: 1.25rem;
+    font-size: 0.7rem;
+  }
+}
